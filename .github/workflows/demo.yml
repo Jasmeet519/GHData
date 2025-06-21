@@ -10,7 +10,7 @@ jobs:
       - name: Get code
         uses: actions/checkout@v3
       - name: Check for package.lock.json
-      run: ls -al package.lock.json || echo "package.lock.json not found"  
+        run: ls -al package.lock.json || echo "package.lock.json not found"  
       - name: Cache dependencies
         uses: actions/cache@v4
         with:
